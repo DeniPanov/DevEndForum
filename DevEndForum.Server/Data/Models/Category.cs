@@ -5,6 +5,14 @@
 
     public class Category : BaseInfo
     {
+        public Category()
+        {
+            this.Themes = new HashSet<Theme>();
+
+            this.ThemesCount = 0;
+            this.OpinionsCount = 0;
+        }
+
         [Key]
         public int Id { get; set; }
 
@@ -17,12 +25,10 @@
         [Required]
         public string Img { get; set; }
 
-        [Required]
-        public int ThemesCount { get; set; } = 0;
+        public int ThemesCount { get; set; }
 
-        [Required]
-        public int OpinionsCount { get; set; } = 0;
+        public int OpinionsCount { get; set; }
 
-        public ICollection<Theme> Themes { get; set; } = new List<Theme>();
+        public virtual ICollection<Theme> Themes { get; set; }
     }
 }

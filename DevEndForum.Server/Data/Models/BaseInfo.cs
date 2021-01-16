@@ -1,26 +1,25 @@
 ﻿namespace DevEndForum.Server.Data.Models
 {
     using System;
-    using System.ComponentModel.DataAnnotations;
 
     public abstract class BaseInfo
     {
-        [Key]
-        public int Id { get; set; }
+        public BaseInfo()
+        {
+            this.CreatedOn = DateTime.UtcNow;
 
-        [Required]
-        public bool IsDelete { get; set; } = false;
+            this.IsDeleted = false;
+            this.IsModified = false;
+        }
 
-        [Required]
-        public DateTime DeleteOn { get; set; } = DateTime.UtcNow;
+        public bool IsDeleted { get; set; }
 
-        [Required]
-        public bool IsModifait { get; set; } = false;
+        public DateTime? DeletedOn { get; set; }
 
-        [Required]
-        public DateTime ModifaitOn { get; set; } = DateTime.UtcNow;
+        public bool IsModified { get; set; }
 
-        [Required]
-        public DateTime CreateOn { get; set; } = DateTime.UtcNow;
+        public DateTime? ModifiedOn { get; set; }
+
+        public DateTime CreatedOn { get; set; } 
     }
 }
