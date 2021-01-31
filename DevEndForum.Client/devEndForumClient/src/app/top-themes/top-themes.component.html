@@ -1,0 +1,32 @@
+<div class="wrapper fadeInDown" *ngIf="isLogin">
+    <div id="formContent">
+      <!-- Tabs Titles -->
+
+      <div class="fadeIn first">
+       <h2>Top 5 Themes</h2>
+      </div>
+
+      <div *ngIf="isCreate; then thenBlock else elseBlock"></div>
+      <ng-template #thenBlock>
+        <div id="formFooter" *ngFor="let theme of themes">
+          <a class="underlineHover" href="#" >{{theme.name}}</a>
+        </div>
+    </ng-template>
+    <ng-template #elseBlock>
+      <div id="formFooter" >
+        <p>No topic created yet. Be the first-
+       <a  class="underlineHover" (click)="createTheme()">Create Theme</a ></p>
+      </div>
+  </ng-template>
+  
+  </div>
+</div>
+
+
+<div class="wrapper fadeInDown" *ngIf="!isLogin">
+  <div id="formContent">
+
+   ......
+
+</div>
+</div>
