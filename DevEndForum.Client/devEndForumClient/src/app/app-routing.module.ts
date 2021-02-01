@@ -5,9 +5,10 @@ import { RegisterComponent } from './register/register.component';
 import { WrapperComponent } from './wrapper/wrapper.component';
 
 const routes: Routes = [
+  { path: '', component: WrapperComponent },
+  { path: 'home', component: WrapperComponent},
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent},
-  { path: 'home', component: WrapperComponent},
 ];
 
 @NgModule({
