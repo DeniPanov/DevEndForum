@@ -1,12 +1,13 @@
 <div class="container">
     <div class="row centered-form">
-    <div class="col-xs col-sm-6 col-md col-sm-offset-6 col-md-offset-6">
+    <div class="col-xs col-sm-5 col-md-8 col-sm-offset-5 col-md-offset-5">
         <div class="panel panel-default">
             <div class="panel-heading">
                     <h3 class="panel-title">Register Form </h3>
+                    <hr>
                      </div>
                      <div class="panel-body">
-                    <form role="form" >
+                    <form role="form" [formGroup]="registerForm" (ngSubmit)="register()">
                         <div class="row">
                             <div class="col-xs-6 col-sm-6 col-md-6">
                                 <div class="form-group">

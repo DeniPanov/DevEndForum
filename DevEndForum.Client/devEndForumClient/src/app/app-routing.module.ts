@@ -5,7 +5,7 @@ import { RegisterComponent } from './register/register.component';
 import { WrapperComponent } from './wrapper/wrapper.component';
 
 const routes: Routes = [
-  { path: '', component: WrapperComponent },
+  { path: '', redirectTo: '/home',pathMatch:"full"},
   { path: 'home', component: WrapperComponent},
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent},
