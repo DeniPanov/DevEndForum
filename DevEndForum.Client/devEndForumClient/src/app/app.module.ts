@@ -12,8 +12,6 @@ import { LoginComponent } from './login/login.component';
 import { AuthService } from './services/auth.service';
 import { UserService } from './services/user.service';
 import { TopThemesComponent } from './top-themes/top-themes.component';
-import { FormGroup, ReactiveFormsModule } from '@angular/forms';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -29,9 +27,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    ReactiveFormsModule,
-    HttpClientModule
+    AppRoutingModule
   ],
   providers: [
     AuthService,

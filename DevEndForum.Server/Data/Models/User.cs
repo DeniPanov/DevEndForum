@@ -12,7 +12,9 @@
             this.IsDeleted = false;
             this.IsModified = false;
         }
-        public string Image { get; set; }
+        public string FirstName { get; set; }
+
+        public string LastName { get; set; }
 
         public bool IsDeleted { get; set; }
 

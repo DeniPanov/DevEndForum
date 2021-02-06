@@ -9,6 +9,9 @@ namespace DevEndForum.Server
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Hosting;
     using DevEndForum.Server.Data.Models;
+    using Catstagram.Server.Features.Identity;
+    using Catstagram.Server.Features.Profiles;
+    using Catstagram.Server.Infrastructure.Services;
 
     public class Startup
     {
@@ -27,6 +30,9 @@ namespace DevEndForum.Server
 
             services.AddIdentity<User, IdentityRole>()
                 .AddEntityFrameworkStores<DevEndDbContext>();
+            services.AddTransient<IIdentityService, IdentityService>();
+            services.AddTransient<IProfileService, ProfileService>();
+            services.AddTransient<ICurrentUserService, CurrentUserService>();
 
             services.AddControllers();
         }
