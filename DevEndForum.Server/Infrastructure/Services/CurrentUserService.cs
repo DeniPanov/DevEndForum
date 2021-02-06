@@ -1,4 +1,4 @@
-﻿namespace Catstagram.Server.Infrastructure.Services
+﻿namespace DevEndForum.Server.Infrastructure.Services
 {
     using System.Security.Claims;
     //using Extensions;

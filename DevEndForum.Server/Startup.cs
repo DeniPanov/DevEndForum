@@ -9,9 +9,9 @@ namespace DevEndForum.Server
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Hosting;
     using DevEndForum.Server.Data.Models;
-    using Catstagram.Server.Features.Identity;
-    using Catstagram.Server.Features.Profiles;
-    using Catstagram.Server.Infrastructure.Services;
+    using DevEndForum.Server.Features.Identity;
+    using DevEndForum.Server.Features.Profiles;
+    using DevEndForum.Server.Infrastructure.Services;
 
     public class Startup
     {

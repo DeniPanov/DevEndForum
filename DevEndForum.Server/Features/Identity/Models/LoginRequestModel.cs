@@ -1,5 +1,4 @@
-﻿
-namespace Catstagram.Server.Features.Identity.Models
+﻿namespace DevEndForum.Server.Features.Identity.Models
 {
     using System.ComponentModel.DataAnnotations;
 

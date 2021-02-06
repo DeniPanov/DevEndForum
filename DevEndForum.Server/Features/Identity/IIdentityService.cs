@@ -1,4 +1,4 @@
-﻿namespace Catstagram.Server.Features.Identity
+﻿namespace DevEndForum.Server.Features.Identity
 {
     public interface IIdentityService
     {

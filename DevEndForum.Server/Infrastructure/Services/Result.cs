@@ -1,5 +1,4 @@
-﻿
-namespace Catstagram.Server.Infrastructure.Services
+﻿namespace DevEndForum.Server.Infrastructure.Services
 {
     public class Result
     {

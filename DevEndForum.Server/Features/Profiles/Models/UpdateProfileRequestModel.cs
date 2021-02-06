@@ -1,4 +1,4 @@
-﻿namespace Catstagram.Server.Features.Profiles.Models
+﻿namespace DevEndForum.Server.Features.Profiles.Models
 {
     using System.ComponentModel.DataAnnotations;
     using DevEndForum.Server.Data.Models;

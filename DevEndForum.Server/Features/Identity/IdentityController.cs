@@ -1,4 +1,4 @@
-﻿namespace Catstagram.Server.Features.Identity
+﻿namespace DevEndForum.Server.Features.Identity
 {
     using System.Threading.Tasks;
     using DevEndForum.Server.Data.Models;

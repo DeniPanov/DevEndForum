@@ -1,4 +1,4 @@
-﻿namespace Catstagram.Server.Infrastructure
+﻿namespace DevEndForum.Server.Infrastructure
 {
     public class WebConstants
     {

@@ -1,4 +1,4 @@
-﻿namespace Catstagram.Server.Features.Profiles
+﻿namespace DevEndForum.Server.Features.Profiles
 {
     using System.Linq;
     using System.Threading.Tasks;
